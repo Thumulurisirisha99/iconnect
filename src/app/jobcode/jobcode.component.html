@@ -1,0 +1,68 @@
+<div class="container-fluid">
+    <app-nav></app-nav>
+</div>
+
+<nav aria-label="breadcrumb">
+    <ol class="breadcrumb">  
+        <li class="breadcrumb-item active" aria-current="page">
+            Job Code
+        </li>    
+        <li class="_date">
+            Logged in from {{myDate | momentDate: 'dddd, DD'}}<sup>{{(myDate | momentDate: 'D') | dateSuffix}}</sup>
+            {{myDate | momentDate: 'MMM yyyy, hh:mm A'}}
+        </li> 
+    </ol>
+</nav>
+<div class="container-fluid">
+    <div class="row">
+      <!-- Sidebar -->
+      <div class="col-md-3 col-lg-2 p-3 bg-white" style="height: 100vh; position: fixed;">
+        <ul class="nav flex-column">
+          <!-- Home Item with Toggle -->
+          <li class="nav-item">
+            <a class="nav-link" (click)="toggleSection('home')">
+              Fuctional Requirements <i [ngClass]="homeIcon"></i>
+            </a>
+            <div *ngIf="isHomeOpen">
+              <ul class="nav flex-column ms-3">
+                <li><a class="nav-link" href="#">Job Codes</a></li>
+                <li><a class="nav-link" href="#">Vacancy and Recruitment</a></li>
+              </ul>
+            </div>
+          </li>
+  
+          <!-- About Us Item with Toggle -->
+          <li class="nav-item">
+            <a class="nav-link">
+              <i [ngClass]="aboutUsIcon"></i>Non Functional Requirements
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link">
+              <i [ngClass]="aboutUsIcon"></i>Use Case Scenarios
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link">
+              <i [ngClass]="aboutUsIcon"></i>Appendices
+            </a>
+          </li>
+        </ul>
+      </div>
+  
+      <!-- Main Content -->
+      <div class="col-md-9 col-lg-10 p-3" style="margin-left: 250px;">
+        <h1>Main Content</h1>
+        <p>This is the main content area. The sidebar is on the left with collapsible items.</p>
+      </div>
+    </div>
+  </div>
+  
+<div class="loader attDnceLoadr" *ngIf="isLoading">
+    <!-- <div class="bg_icon"></div> -->
+    <div class="spinner">
+        <div class="bounce1"></div>
+        <div class="bounce2"></div>
+        <div class="bounce3"></div>
+    </div>
+  </div>

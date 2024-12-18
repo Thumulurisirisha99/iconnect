@@ -1,0 +1,342 @@
+a.nav-link 
+  margin: 0px 8px
+li.nav-item:nth-child(6) a.nav-link,
+li.nav-item:nth-child(7) a.nav-link,
+li.nav-item:nth-child(8) a.nav-link,
+li.nav-item:nth-child(9) a.nav-link    
+  margin: 0 2px
+img.logo
+  max-width: 200px
+img.logo1
+  max-height: 48px  
+
+.iconnectNav
+  border-bottom: 1px dashed #0072bc
+  a.nav-link 
+    font-weight: 600
+    opacity: .7
+    color: #101010!important
+    user-select: none
+    i
+      cursor: pointer
+  ._home
+    i.fa
+      font-size: 2em
+      color: #101010 
+  ._shrtNme
+    padding: 4px 0px    
+  li.dropdown  
+    .dropdown-menu 
+      left: initial
+      right: -5px
+      min-width: 290px 
+      background: rgba(0, 0, 0, 0.85)
+      color: white 
+      padding: 0
+      // overflow: hidden
+      &::after
+        border: solid
+        border-color: #0c0c0c transparent 
+        border-width: 0 .4em .4em .4em
+        top: -0.4em
+        content: ""
+        display: block
+        right: 1em
+        position: absolute
+        z-index: 99
+      >p          
+        margin: 0
+        padding: 8px 10px 
+        border-bottom: 1px solid #dddddd7a
+        font-size: 14px
+        background: #0c0c0c
+        overflow: hidden
+      a
+        cursor: pointer
+        color: #ddd
+        padding: 6px 10px
+        font-size: 15px
+        letter-spacing: 0.5px
+        -webkit-animation-name: fadeInLeft
+        animation-name: fadeInLeft
+        -webkit-animation-duration: .1s
+        animation-duration: .1s
+        -webkit-animation-fill-mode: both
+        animation-fill-mode: both
+        &:hover      
+          background-color: transparent
+          color: #fff
+        &:focus, &:active, &:visited     
+          background: none
+          border: none
+          box-shadow: none 
+        &:nth-child(2)
+          animation-delay: .15s
+        &:nth-child(3)
+          animation-delay: .20s  
+        &:nth-child(4)
+          animation-delay: .25s
+          
+        
+.inOutTime
+  display: flex
+  flex-flow: row
+  min-width: 150px
+  justify-content: space-between
+  border: 1px solid #ececec
+  div
+    display: flex
+    flex-flow: column
+    justify-content: flex-start
+    align-items: center
+    width: 50%
+    -webkit-backface-visibility: visible !important
+    backface-visibility: visible !important
+    -webkit-animation-name: flipInX
+    animation-name: flipInX
+    -webkit-animation-duration: .75s
+    animation-duration: .75s
+    -webkit-animation-fill-mode: both
+    animation-fill-mode: both
+    &:nth-child(1)
+      border-right: 1px solid #ececec
+    &:nth-child(2)  
+      animation-delay: .5s
+    label
+      margin: 0
+      display: block
+      // background: #7a86fa
+      background: #f7f9fb
+      width: 100%
+      text-align: center
+      color: #101010
+      font-size: 12px
+      font-weight: bold
+      line-height: 1
+      padding-top: 4px
+      padding-bottom: 2px
+      margin-bottom: 5px
+      text-transform: uppercase
+    span  
+      color: #7a86fa
+      -webkit-text-stroke: 1px #7d7d7dcf
+      font-size: 18px
+      padding: 0 6px
+      font-weight: bolder
+      // text-shadow: 0px -2px #fff, 1px -1px #7a86fa, 1px -2px #06060698
+      letter-spacing: 1.5px
+      line-height: 1
+.inOutTime._wfh
+  min-width: 100px
+  div 
+    width: 100%
+    border: 0
+    label
+      margin-bottom: 8px
+      
+div#PasswrdModal   
+  .modal-dialog
+    -webkit-animation-name: fadeInDown
+    animation-name: fadeInDown
+    -webkit-animation-duration: .3s
+    animation-duration: .3s
+    -webkit-animation-fill-mode: both
+    animation-fill-mode: both
+  label
+    margin-bottom: 4px
+  p
+    margin-bottom: 6px
+  .alert-danger
+    color: #e63813
+    background-color: #f7e5e6
+    border-color: #f5c6cb
+    padding: 2px 10px
+  button.btn 
+    margin: 0 0.5em
+    min-width: 100px
+  input.form-control
+    outline: none
+    box-shadow: none  
+  ._footr
+    p 
+      font-size: 14px
+    ul 
+      padding-left: 2em
+      margin: 0
+      li 
+        font-size: 14px
+
+.reltv
+  position: relative
+  .abslt
+    position: absolute
+    bottom: 0
+    background: white
+
+.hyt90
+  height: 80px
+  position: relative
+    
+.iconnectNav
+  position: fixed
+  top: 0
+  left: 0
+  width: 100%
+  z-index: 999
+  border-top: 8px solid #0072bc
+  min-height: 85px
+#myModal
+  z-index: 999999999
+.modal
+  transition: transform .3s ease-out  
+  &::after
+    position: absolute
+    content: ''
+    background: black
+    opacity: .5
+    width: 100%
+    height: 100%
+    top: 0
+    left: 0
+    z-index: -1
+  .close 
+    outline: none
+    box-shadow: none  
+
+div#PasswrdModal 
+  overflow: hidden
+.fa_home
+  background: url('../../assets/img/icons/home-1.svg')no-repeat
+  // width: 42px
+  // height: 32px
+  display: block
+  width: 38px
+  height: 38px
+  background-size: contain
+  background-position: center
+  margin: 0 auto
+.fa_search, .fa_cog, .fa_bell, .fa_signOut
+  background: url('../../assets/img/dashboard/menu-icons.svg')no-repeat
+  width: 24px
+  height: 26px
+  background-position: 0px 0px
+  display: inline-block
+.fa_cog
+  background: url('../../assets/img/dashboard/menu-icons.svg')no-repeat
+  background-position: -41px 0px
+.fa_bell  
+  background: url('../../assets/img/dashboard/menu-icons.svg')no-repeat
+  background-position: -124px 0px
+.fa_signOut
+  background: url('../../assets/img/dashboard/menu-icons.svg')no-repeat
+  background-position: -164px 0px
+
+a.nav-link sup
+  top: -2.2em
+  left: -5px
+  background: #0072bc
+  padding: 3px
+  color: white
+  font-size: 12px
+  border-radius: 5px
+  letter-spacing: 1px  
+.navbar-light .navbar-brand:hover, .navbar-light .navbar-brand:focus
+  outline: none!important
+  box-shadow: none!important  
+
+.timerModal
+  display: flex
+  justify-content: center
+  align-items: center  
+  height: 100%
+  .modal-content
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    width: 100%
+    height: auto
+    max-height: 450px
+    max-width: 480px
+    margin: 0 auto
+    padding: 2em
+  img 
+    max-height: 150px  
+  .sessionTimebutns
+    display: flex
+    flex-flow: row
+    justify-content: space-between
+    max-width: 220px
+    width: 100%
+    margin: 1.25em auto
+    margin-bottom: 0
+  button.themeBtn
+    font-size: 14px
+    padding: 8px 10px
+    border: none
+    border-radius: 5px
+    min-width: 90px
+    background-color: #22cb68
+    color: white
+    outline: none
+    box-shadow: none  
+    text-transform: uppercase
+    &._logout
+      background-color: rgb(237, 136, 4)
+
+  h2 
+    font-size: 22px
+    color: #101010
+    b
+      font-weight: 600
+
+li._home
+  a.nav-link    
+    opacity: 1!important
+    padding: 0 0.95rem!important
+    span
+      font-size: 12px
+      margin: 0
+      font-weight: bold
+      padding: 0
+      line-height: 1
+      display: block  
+      color: #0c0c0c
+      text-transform: uppercase
+      text-align: center
+
+span.proImgCircle
+  // width: 40px
+  // height: 40px
+  // border-radius: 50%
+  // border: 1px solid #7a86fa
+  overflow: hidden
+  display: block
+  text-align: center      
+  img 
+    max-width: 40px
+    display: none
+  h3      
+    // background: #e4eaf0
+    background: #f9fafc
+    color: #101010
+    font-size: 20px
+    margin: 0
+    padding: 5px 4px
+    line-height: 1.5
+    min-width: 44px
+    max-height: 44px
+    overflow: hidden
+    text-align: center
+    user-select: none
+    border: 1px solid #7a86fa
+    border-radius: 50%
+
+.pfleOptions
+  overflow: hidden    
+  padding: 0.25em 0.25em 0.5em 0.25em
+
+
+@media screen and ( max-width: 767px )
+  li.nav-item._home 
+    a.nav-link 
+      padding-right: 0 !important  
